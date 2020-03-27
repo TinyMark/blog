@@ -25,6 +25,22 @@ sidebar: false
             text-decoration: none !important;
         }
     }
+
+    footer{
+        position: absolute;
+        bottom:0;
+        text-align: center;
+        max-width: 740px;
+        height: 30px;
+        a {
+            color: #888;
+            font-size: 12px;
+            &:hover{
+                color: #F60;
+                text-decoration: underline;
+            }
+        }
+    }
 </style>
 
 <header class="header">
@@ -48,6 +64,6 @@ sidebar: false
 
 - 更新中。。。
 
-<footer style="color:#ccc">
-<a href="http://beian.miit.gov.cn">备案号（粤ICP备19155685号）</a>
+<footer>
+<a href="http://beian.miit.gov.cn">粤ICP备19155685号</a>
 </footer>
