@@ -1,0 +1,28 @@
+language: node_js
+node_js: stable
+
+# S: Build Lifecycle
+install:
+  - npm i
+
+script:
+  - npm run build
+
+after_script:
+  - cd ./dist
+  - git init
+  - git config user.name "tinymark"
+  - git config user.email "bladem@163.com"
+  - git checkout -b gh-pages
+  - git add .
+  - git commit -m "Update blog..."
+  - git push --force --quiet https://${GH_TOKEN}@${GH_REF} gh-pages:gh-pages
+# E: Build LifeCycle
+
+branches:
+  only:
+    - gh-pages
+
+env:
+  global:
+    - GH_REF: github.com/TinyMark/blog.git
