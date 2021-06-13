@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>JavaScript | 好好学习，天天向上</title>
+    <meta name="description" content="Just playing around">
+    <meta name="generator" content="VuePress 1.4.0">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.19b82048.css" as="style"><link rel="preload" href="/assets/js/app.095001a8.js" as="script"><link rel="preload" href="/assets/js/2.92f36ea8.js" as="script"><link rel="preload" href="/assets/js/7.96af0fe2.js" as="script"><link rel="prefetch" href="/assets/js/10.713931ff.js"><link rel="prefetch" href="/assets/js/11.2436a4da.js"><link rel="prefetch" href="/assets/js/12.3401c678.js"><link rel="prefetch" href="/assets/js/13.8ace1a86.js"><link rel="prefetch" href="/assets/js/14.66a59801.js"><link rel="prefetch" href="/assets/js/15.d6a7c5e8.js"><link rel="prefetch" href="/assets/js/16.0f8ee960.js"><link rel="prefetch" href="/assets/js/3.12335b9b.js"><link rel="prefetch" href="/assets/js/4.a7a9206e.js"><link rel="prefetch" href="/assets/js/5.b69531f8.js"><link rel="prefetch" href="/assets/js/6.4ad6e319.js"><link rel="prefetch" href="/assets/js/8.31050bf3.js"><link rel="prefetch" href="/assets/js/9.232e6ecf.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.19b82048.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">好好学习，天天向上</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🙋‍♂️HELP" class="dropdown-title"><span class="title">🙋‍♂️HELP</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/help/面试宝典.html" class="nav-link">
+  面试宝典
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🔥新世界" class="dropdown-title"><span class="title">🔥新世界</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/新世界/黑科技.html" class="nav-link">
+  黑科技
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🙈算法修炼" class="dropdown-title"><span class="title">🙈算法修炼</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          算法问题
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/算法修炼/十大经典排序算法/十大经典排序算法.html" class="nav-link">
+  十大经典排序算法
+</a></li><li class="dropdown-subitem"><a href="/算法修炼/Fibonacci/斐波那契数列.html" class="nav-link">
+  斐波那契数列
+</a></li></ul></li><li class="dropdown-item"><h4>
+          LeetCode
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/算法修炼/LeetCode/JavaScript/JavaScript.html" class="nav-link">
+  JavaScript
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/算法修炼/拍大腿/拍大腿的解法（还可以这样玩）.html" class="nav-link">
+  拍大腿
+</a></li></ul></div></div> <a href="https://github.com/tinymark" target="_blank" rel="noopener noreferrer" class="repo-link">
+    🤞GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🙋‍♂️HELP" class="dropdown-title"><span class="title">🙋‍♂️HELP</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/help/面试宝典.html" class="nav-link">
+  面试宝典
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🔥新世界" class="dropdown-title"><span class="title">🔥新世界</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/新世界/黑科技.html" class="nav-link">
+  黑科技
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🙈算法修炼" class="dropdown-title"><span class="title">🙈算法修炼</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          算法问题
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/算法修炼/十大经典排序算法/十大经典排序算法.html" class="nav-link">
+  十大经典排序算法
+</a></li><li class="dropdown-subitem"><a href="/算法修炼/Fibonacci/斐波那契数列.html" class="nav-link">
+  斐波那契数列
+</a></li></ul></li><li class="dropdown-item"><h4>
+          LeetCode
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/算法修炼/LeetCode/JavaScript/JavaScript.html" class="nav-link">
+  JavaScript
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/算法修炼/拍大腿/拍大腿的解法（还可以这样玩）.html" class="nav-link">
+  拍大腿
+</a></li></ul></div></div> <a href="https://github.com/tinymark" target="_blank" rel="noopener noreferrer" class="repo-link">
+    🤞GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>JavaScript</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/%E7%AE%97%E6%B3%95%E4%BF%AE%E7%82%BC/LeetCode/JavaScript/JavaScript.html#算法" class="sidebar-link">算法</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/%E7%AE%97%E6%B3%95%E4%BF%AE%E7%82%BC/LeetCode/JavaScript/JavaScript.html#_1-两数之和" class="sidebar-link">1. 两数之和</a></li><li class="sidebar-sub-header"><a href="/%E7%AE%97%E6%B3%95%E4%BF%AE%E7%82%BC/LeetCode/JavaScript/JavaScript.html#_2-两数相加" class="sidebar-link">2. 两数相加</a></li><li class="sidebar-sub-header"><a href="/%E7%AE%97%E6%B3%95%E4%BF%AE%E7%82%BC/LeetCode/JavaScript/JavaScript.html#_3-无重复字符的最长子串" class="sidebar-link">3.无重复字符的最长子串</a></li><li class="sidebar-sub-header"><a href="/%E7%AE%97%E6%B3%95%E4%BF%AE%E7%82%BC/LeetCode/JavaScript/JavaScript.html#_4-寻找两个有序数组的中位数" class="sidebar-link">4. 寻找两个有序数组的中位数</a></li><li class="sidebar-sub-header"><a href="/%E7%AE%97%E6%B3%95%E4%BF%AE%E7%82%BC/LeetCode/JavaScript/JavaScript.html#_5-最长回文子串" class="sidebar-link">5. 最长回文子串</a></li><li class="sidebar-sub-header"><a href="/%E7%AE%97%E6%B3%95%E4%BF%AE%E7%82%BC/LeetCode/JavaScript/JavaScript.html#_6-z-字形变换" class="sidebar-link">6. Z 字形变换</a></li><li class="sidebar-sub-header"><a href="/%E7%AE%97%E6%B3%95%E4%BF%AE%E7%82%BC/LeetCode/JavaScript/JavaScript.html#_7-整数反转" class="sidebar-link">7. 整数反转</a></li><li class="sidebar-sub-header"><a href="/%E7%AE%97%E6%B3%95%E4%BF%AE%E7%82%BC/LeetCode/JavaScript/JavaScript.html#_8-字符串转换整数-atoi" class="sidebar-link">8. 字符串转换整数 (atoi)</a></li><li class="sidebar-sub-header"><a href="/%E7%AE%97%E6%B3%95%E4%BF%AE%E7%82%BC/LeetCode/JavaScript/JavaScript.html#_9-回文数" class="sidebar-link">9. 回文数</a></li><li class="sidebar-sub-header"><a href="/%E7%AE%97%E6%B3%95%E4%BF%AE%E7%82%BC/LeetCode/JavaScript/JavaScript.html#_10-正则表达式匹配" class="sidebar-link">~~10. 正则表达式匹配~~</a></li><li class="sidebar-sub-header"><a href="/%E7%AE%97%E6%B3%95%E4%BF%AE%E7%82%BC/LeetCode/JavaScript/JavaScript.html#_11-盛最多水的容器" class="sidebar-link">11. 盛最多水的容器</a></li><li class="sidebar-sub-header"><a href="/%E7%AE%97%E6%B3%95%E4%BF%AE%E7%82%BC/LeetCode/JavaScript/JavaScript.html#_12-整数转罗马数字" class="sidebar-link">~~12. 整数转罗马数字~~</a></li><li class="sidebar-sub-header"><a href="/%E7%AE%97%E6%B3%95%E4%BF%AE%E7%82%BC/LeetCode/JavaScript/JavaScript.html#_13-罗马数字转整数" class="sidebar-link">~~13. 罗马数字转整数~~</a></li><li class="sidebar-sub-header"><a href="/%E7%AE%97%E6%B3%95%E4%BF%AE%E7%82%BC/LeetCode/JavaScript/JavaScript.html#_14-最长公共前缀" class="sidebar-link">14. 最长公共前缀</a></li><li class="sidebar-sub-header"><a href="/%E7%AE%97%E6%B3%95%E4%BF%AE%E7%82%BC/LeetCode/JavaScript/JavaScript.html#_28-实现-strstr" class="sidebar-link">28. 实现 strStr()</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="javascript"><a href="#javascript" class="header-anchor">#</a> JavaScript</h1> <h2 id="算法"><a href="#算法" class="header-anchor">#</a> 算法</h2> <h3 id="_1-两数之和"><a href="#_1-两数之和" class="header-anchor">#</a> <a href="https://leetcode-cn.com/problems/two-sum/" target="_blank" rel="noopener noreferrer">1. 两数之和<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></h3> <p>给定一个整数数组 <code>nums</code> 和一个目标值 <code>target</code>请你在该数组中找出和为目标值的那 <strong>两个</strong> 整数，并返回他们的数组下标。</p> <p>你可以假设每种输入只会对应一个答案。但是，你不能重复利用这个数组中同样的元素。</p> <p><strong>示例:</strong></p> <div class="language- extra-class"><pre class="language-text"><code>给定 nums = [2, 7, 11, 15], target = 9
+
+因为 nums[0] + nums[1] = 2 + 7 = 9
+所以返回 [0, 1]
+</code></pre></div><p><strong>解</strong></p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">/**
+ * @param {number[]} nums
+ * @param {number} target
+ * @return {number[]}
+ */</span>
+<span class="token keyword">var</span> <span class="token function-variable function">twoSum</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">nums<span class="token punctuation">,</span> target</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> nums<span class="token punctuation">.</span>length <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> j <span class="token operator">=</span> i <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> nums<span class="token punctuation">.</span>length<span class="token punctuation">;</span> j<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">+</span> nums<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">===</span> target<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token punctuation">[</span>i<span class="token punctuation">,</span> j<span class="token punctuation">]</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="_2-两数相加"><a href="#_2-两数相加" class="header-anchor">#</a> <a href="https://leetcode-cn.com/problems/add-two-numbers/" target="_blank" rel="noopener noreferrer">2. 两数相加<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></h3> <p>给出两个 <strong>非空</strong> 的链表用来表示两个非负的整数。其中，它们各自的位数是按照 <strong>逆序</strong> 的方式存储的，并且它们的每个节点只能存储 <strong>一位</strong> 数字。</p> <p>如果，我们将这两个数相加起来，则会返回一个新的链表来表示它们的和。</p> <p>您可以假设除了数字 0 之外，这两个数都不会以 0 开头。</p> <p><strong>示例：</strong></p> <div class="language- extra-class"><pre class="language-text"><code>输入：(2 -&gt; 4 -&gt; 3) + (5 -&gt; 6 -&gt; 4)
+输出：7 -&gt; 0 -&gt; 8
+原因：342 + 465 = 807
+</code></pre></div><p><strong>解</strong></p> <blockquote><p>需要创建 ListNode 表链的构造函数 及 表链转数组、数组转表链的函数</p> <p>遍历数组相加</p></blockquote> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">/**
+ * Definition for singly-linked list.
+ * function ListNode(val) {
+ *     this.val = val;
+ *     this.next = null;
+ * }
+ */</span>
+<span class="token comment">/**
+ * @param {ListNode} l1
+ * @param {ListNode} l2
+ * @return {ListNode}
+ */</span>
+
+<span class="token keyword">var</span> <span class="token function-variable function">addTwoNumbers</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">l1<span class="token punctuation">,</span> l2</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  l1 <span class="token operator">=</span> <span class="token function">listNode2arr</span><span class="token punctuation">(</span>l1<span class="token punctuation">)</span>
+  l2 <span class="token operator">=</span> <span class="token function">listNode2arr</span><span class="token punctuation">(</span>l2<span class="token punctuation">)</span>
+  <span class="token keyword">var</span> res <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+  len <span class="token operator">=</span> l1<span class="token punctuation">.</span>length <span class="token operator">&gt;</span> l2<span class="token punctuation">.</span>length <span class="token operator">?</span> l1<span class="token punctuation">.</span>length <span class="token operator">:</span> l2<span class="token punctuation">.</span>length
+  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> len<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> tmp <span class="token operator">=</span> <span class="token punctuation">(</span>l1<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">||</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token punctuation">(</span>l2<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">||</span> <span class="token number">0</span><span class="token punctuation">)</span>
+    res<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> res<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">||</span> <span class="token number">0</span>
+    res<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">+=</span> tmp
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>res<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">&gt;</span> <span class="token number">9</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      res<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> res<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">-</span> <span class="token number">10</span>
+      res<span class="token punctuation">[</span>i <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">1</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> <span class="token function">arr2listNode</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> <span class="token function">ListNode</span><span class="token punctuation">(</span><span class="token parameter">val</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>val <span class="token operator">=</span> val
+  <span class="token keyword">this</span><span class="token punctuation">.</span>next <span class="token operator">=</span> <span class="token keyword">null</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> <span class="token function">arr2listNode</span><span class="token punctuation">(</span><span class="token parameter">arr</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> next <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ListNode</span><span class="token punctuation">(</span>arr<span class="token punctuation">[</span>arr<span class="token punctuation">.</span>length <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+  <span class="token keyword">var</span> res <span class="token operator">=</span> next
+  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> arr<span class="token punctuation">.</span>length <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">;</span> i<span class="token operator">--</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    res <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ListNode</span><span class="token punctuation">(</span>arr<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+    res<span class="token punctuation">.</span>next <span class="token operator">=</span> next
+    next <span class="token operator">=</span> res
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> res
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> <span class="token function">listNode2arr</span><span class="token punctuation">(</span><span class="token parameter">listnode<span class="token punctuation">,</span> arr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  arr<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>listnode<span class="token punctuation">.</span>val<span class="token punctuation">)</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>listnode<span class="token punctuation">.</span>next<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">listNode2arr</span><span class="token punctuation">(</span>listnode<span class="token punctuation">.</span>next<span class="token punctuation">,</span> arr<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> arr
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="_3-无重复字符的最长子串"><a href="#_3-无重复字符的最长子串" class="header-anchor">#</a> <a href="https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/" target="_blank" rel="noopener noreferrer">3.无重复字符的最长子串<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></h3> <p>给定一个字符串，请你找出其中不含有重复字符的 <strong>最长子串</strong> 的长度。</p> <p><strong>示例 1:</strong></p> <div class="language- extra-class"><pre class="language-text"><code>输入: &quot;abcabcbb&quot;
+输出: 3
+解释: 因为无重复字符的最长子串是 &quot;abc&quot;，所以其长度为 3。
+</code></pre></div><p><strong>示例 2:</strong></p> <div class="language- extra-class"><pre class="language-text"><code>输入: &quot;bbbbb&quot;
+输出: 1
+解释: 因为无重复字符的最长子串是 &quot;b&quot;，所以其长度为 1。
+</code></pre></div><p><strong>示例 3:</strong></p> <div class="language- extra-class"><pre class="language-text"><code>输入: &quot;pwwkew&quot;
+输出: 3
+解释: 因为无重复字符的最长子串是 &quot;wke&quot;，所以其长度为 3。
+     请注意，你的答案必须是 子串 的长度，&quot;pwke&quot; 是一个子序列，不是子串。
+</code></pre></div><p><strong>解</strong></p> <blockquote><p>滑动窗口</p></blockquote> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">/**
+ * @param {string} s
+ * @return {number}
+ */</span>
+<span class="token keyword">var</span> <span class="token function-variable function">lengthOfLongestSubstring</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">s</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> res <span class="token operator">=</span> <span class="token number">0</span>
+  <span class="token keyword">let</span> tempStr <span class="token operator">=</span> <span class="token string">''</span>
+  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> s<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> index <span class="token operator">=</span> tempStr<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span>s<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>index <span class="token operator">&gt;=</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      tempStr <span class="token operator">=</span> tempStr<span class="token punctuation">.</span><span class="token function">substring</span><span class="token punctuation">(</span>index <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+    tempStr <span class="token operator">+=</span> s<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
+    res <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">max</span><span class="token punctuation">(</span>res<span class="token punctuation">,</span> tempStr<span class="token punctuation">.</span>length<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> res
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="_4-寻找两个有序数组的中位数"><a href="#_4-寻找两个有序数组的中位数" class="header-anchor">#</a> <a href="https://leetcode-cn.com/problems/median-of-two-sorted-arrays/" target="_blank" rel="noopener noreferrer">4. 寻找两个有序数组的中位数<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></h3> <p>给定两个大小为 m 和 n 的有序数组 <code>nums1</code> 和 <code>nums2</code>。</p> <p>请你找出这两个有序数组的中位数，并且要求算法的时间复杂度为 O(log(m + n))。</p> <p>你可以假设 <code>nums1</code> 和 <code>nums2</code> 不会同时为空。</p> <p><strong>示例 1:</strong></p> <div class="language- extra-class"><pre class="language-text"><code>nums1 = [1, 3]
+nums2 = [2]
+
+则中位数是 2.0
+</code></pre></div><p><strong>示例 2:</strong></p> <div class="language- extra-class"><pre class="language-text"><code>nums1 = [1, 2]
+nums2 = [3, 4]
+
+则中位数是 (2 + 3)/2 = 2.5
+</code></pre></div><p><strong>解</strong></p> <blockquote><p>先排序，再取中位数</p></blockquote> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">/**
+ * @param {number[]} nums1
+ * @param {number[]} nums2
+ * @return {number}
+ */</span>
+<span class="token keyword">var</span> <span class="token function-variable function">findMedianSortedArrays</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">nums1<span class="token punctuation">,</span> nums2</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> arr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token operator">...</span>nums1<span class="token punctuation">,</span> <span class="token operator">...</span>nums2<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">sort</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">a<span class="token punctuation">,</span> b</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> a <span class="token operator">-</span> b<span class="token punctuation">)</span>
+  <span class="token keyword">let</span> index <span class="token operator">=</span> <span class="token function">parseInt</span><span class="token punctuation">(</span>arr<span class="token punctuation">.</span>length <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">)</span>
+  <span class="token keyword">return</span> arr<span class="token punctuation">.</span>length <span class="token operator">%</span> <span class="token number">2</span> <span class="token operator">?</span> arr<span class="token punctuation">[</span>index<span class="token punctuation">]</span> <span class="token operator">:</span> <span class="token punctuation">(</span>arr<span class="token punctuation">[</span>index <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">+</span> arr<span class="token punctuation">[</span>index<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">2</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="_5-最长回文子串"><a href="#_5-最长回文子串" class="header-anchor">#</a> <a href="https://leetcode-cn.com/problems/longest-palindromic-substring/" target="_blank" rel="noopener noreferrer">5. 最长回文子串<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></h3> <p>给定一个字符串 <code>s</code>，找到 <code>s</code> 中最长的回文子串。你可以假设 <code>s</code> 的最大长度为 1000。</p> <p><strong>示例 1：</strong></p> <div class="language- extra-class"><pre class="language-text"><code>输入: &quot;babad&quot;
+输出: &quot;bab&quot;
+注意: &quot;aba&quot; 也是一个有效答案。
+</code></pre></div><p><strong>示例 2：</strong></p> <div class="language- extra-class"><pre class="language-text"><code>输入: &quot;cbbd&quot;
+输出: &quot;bb&quot;
+</code></pre></div><p><strong>解</strong></p> <blockquote><p>冒泡遍历的思路，可解，但会超时</p></blockquote> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">/**
+ * @param {string} s
+ * @return {string}
+ */</span>
+<span class="token keyword">var</span> <span class="token function-variable function">longestPalindrome</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">str</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>str<span class="token punctuation">.</span>length <span class="token operator">&lt;</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token keyword">return</span> str
+  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> str<span class="token punctuation">.</span>length <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> i <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span> j<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">var</span> temp <span class="token operator">=</span> str<span class="token punctuation">.</span><span class="token function">substring</span><span class="token punctuation">(</span>j<span class="token punctuation">,</span> str<span class="token punctuation">.</span>length <span class="token operator">-</span> i <span class="token operator">+</span> j<span class="token punctuation">)</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>
+        temp <span class="token operator">===</span>
+        temp
+          <span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">''</span><span class="token punctuation">)</span>
+          <span class="token punctuation">.</span><span class="token function">reverse</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+          <span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token string">''</span><span class="token punctuation">)</span>
+      <span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> temp
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> str<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><blockquote><p>中心查找+遍历</p></blockquote> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">/**
+ * @param {string} s
+ * @return {string}
+ */</span>
+
+<span class="token keyword">var</span> <span class="token function-variable function">longestPalindrome</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">s</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>s<span class="token punctuation">.</span>length <span class="token operator">&lt;</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token keyword">return</span> s <span class="token comment">// 传入的字符串长度小于2，直接输出</span>
+  <span class="token keyword">let</span> len <span class="token operator">=</span> s<span class="token punctuation">.</span>length<span class="token punctuation">,</span> <span class="token comment">// 字符串长度</span>
+    maxLen <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token comment">// 最大回文长度</span>
+    left <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token comment">// （左边）起始位置</span>
+    right <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token comment">// （右边）结束位置</span>
+    start <span class="token operator">=</span> <span class="token number">0</span> <span class="token comment">// 回文起始位置</span>
+  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> len<span class="token punctuation">;</span> <span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 遍历字符串</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>len <span class="token operator">-</span> i <span class="token operator">&lt;=</span> maxLen <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token keyword">break</span> <span class="token comment">// 剩下未遍历的字符串长度小于回文字符串的长度，即剩余字符串就算组成回文，也无法超过最大回文长度，跳出循环</span>
+    left <span class="token operator">=</span> i <span class="token comment">// 初始化 起始位置</span>
+    right <span class="token operator">=</span> i
+    <span class="token keyword">while</span> <span class="token punctuation">(</span>right <span class="token operator">&lt;</span> len <span class="token operator">-</span> <span class="token number">1</span> <span class="token operator">&amp;&amp;</span> s<span class="token punctuation">[</span>right <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">==</span> s<span class="token punctuation">[</span>right<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 循环判断是否为 重复字符（假设回文中心是重复字符，无所谓多少个）</span>
+      <span class="token operator">++</span>right <span class="token comment">// 继续右移</span>
+    <span class="token punctuation">}</span>
+    i <span class="token operator">=</span> right <span class="token operator">+</span> <span class="token number">1</span> <span class="token comment">// 遍历起始位置位移到重复字符串的后一项</span>
+    <span class="token keyword">while</span> <span class="token punctuation">(</span>right <span class="token operator">&lt;</span> len <span class="token operator">-</span> <span class="token number">1</span> <span class="token operator">&amp;&amp;</span> left <span class="token operator">&gt;</span> <span class="token number">0</span> <span class="token operator">&amp;&amp;</span> s<span class="token punctuation">[</span>right <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">==</span> s<span class="token punctuation">[</span>left <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 循环判断 重复字符 左右是否相同，不同就跳出</span>
+      <span class="token operator">++</span>right <span class="token comment">// 右移</span>
+      <span class="token operator">--</span>left <span class="token comment">// 左移</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>maxLen <span class="token operator">&lt;</span> right <span class="token operator">-</span> left <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 如果记录的最大长度，小于 右侧-左侧 的长度</span>
+      maxLen <span class="token operator">=</span> right <span class="token operator">-</span> left <span class="token operator">+</span> <span class="token number">1</span> <span class="token comment">// 记录最大回文字符串长度</span>
+      start <span class="token operator">=</span> left <span class="token comment">// 记录最大回文字符串的起始位置</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> s<span class="token punctuation">.</span><span class="token function">substring</span><span class="token punctuation">(</span>start<span class="token punctuation">,</span> start <span class="token operator">+</span> maxLen<span class="token punctuation">)</span> <span class="token comment">// 输出 截取回文字符串[起始位置,起始位置+最大长度)</span>
+<span class="token punctuation">}</span>
+</code></pre></div><blockquote><p>假设+遍历</p></blockquote> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">/**
+ * @param {string} s
+ * @return {string}
+ */</span>
+<span class="token keyword">var</span> <span class="token function-variable function">longestPalindrome</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">str</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>str<span class="token punctuation">.</span>length <span class="token operator">&lt;</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token keyword">return</span> str
+  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> str<span class="token punctuation">.</span>length <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> len <span class="token operator">=</span> str<span class="token punctuation">.</span>length <span class="token operator">-</span> i
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> j <span class="token operator">&lt;=</span> i<span class="token punctuation">;</span> j<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">let</span> tempStr <span class="token operator">=</span> str<span class="token punctuation">.</span><span class="token function">substring</span><span class="token punctuation">(</span>j<span class="token punctuation">,</span> j <span class="token operator">+</span> len<span class="token punctuation">)</span>
+      <span class="token keyword">let</span> leftIndex <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">floor</span><span class="token punctuation">(</span>tempStr<span class="token punctuation">.</span>length <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token number">1</span>
+      <span class="token keyword">let</span> rightIndex <span class="token operator">=</span> tempStr<span class="token punctuation">.</span>length <span class="token operator">%</span> <span class="token number">2</span> <span class="token operator">?</span> leftIndex <span class="token operator">+</span> <span class="token number">2</span> <span class="token operator">:</span> leftIndex <span class="token operator">+</span> <span class="token number">1</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>tempStr<span class="token punctuation">.</span>length <span class="token operator">&lt;=</span> <span class="token number">3</span> <span class="token operator">&amp;&amp;</span> tempStr<span class="token punctuation">[</span>leftIndex<span class="token punctuation">]</span> <span class="token operator">===</span> tempStr<span class="token punctuation">[</span>rightIndex<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> tempStr
+      <span class="token punctuation">}</span>
+      <span class="token keyword">while</span> <span class="token punctuation">(</span>tempStr<span class="token punctuation">[</span>leftIndex<span class="token punctuation">]</span> <span class="token operator">===</span> tempStr<span class="token punctuation">[</span>rightIndex<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>leftIndex <span class="token operator">===</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token keyword">return</span> tempStr
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+          <span class="token operator">--</span>leftIndex
+          <span class="token operator">++</span>rightIndex
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> str<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="_6-z-字形变换"><a href="#_6-z-字形变换" class="header-anchor">#</a> <a href="https://leetcode-cn.com/problems/zigzag-conversion/" target="_blank" rel="noopener noreferrer">6. Z 字形变换<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></h3> <p>将一个给定字符串根据给定的行数，以从上往下、从左到右进行 Z 字形排列。</p> <p>比如输入字符串为 <code>&quot;LEETCODEISHIRING&quot;</code> 行数为 3 时，排列如下：</p> <div class="language- extra-class"><pre class="language-text"><code>L   C   I   R
+E T O E S I I G
+E   D   H   N
+</code></pre></div><p>之后，你的输出需要从左往右逐行读取，产生出一个新的字符串，比如：&quot;LCIRETOESIIGEDHN&quot;。</p> <p>请你实现这个将字符串进行指定行数变换的函数：</p> <div class="language- extra-class"><pre class="language-text"><code>string convert(string s, int numRows);
+</code></pre></div><p><strong>示例 1:</strong></p> <div class="language- extra-class"><pre class="language-text"><code>输入: s = &quot;LEETCODEISHIRING&quot;, numRows = 3
+输出: &quot;LCIRETOESIIGEDHN&quot;
+解释:
+
+ L   C   I   R
+ E T O E S I I G
+ E   D   H   N
+</code></pre></div><p><strong>示例 2:</strong></p> <div class="language- extra-class"><pre class="language-text"><code>输入: s = &quot;LEETCODEISHIRING&quot;, numRows = 4
+输出: &quot;LDREOEIIECIHNTSG&quot;
+解释:
+
+L     D     R
+E   O E   I I
+E C   I H   N
+T     S     G
+</code></pre></div><p><strong>解</strong></p> <blockquote><p>难点是方向转换</p></blockquote> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">/**
+ * @param {string} s
+ * @param {number} numRows
+ * @return {string}
+ */</span>
+<span class="token keyword">var</span> <span class="token function-variable function">convert</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">s<span class="token punctuation">,</span> numRows</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>numRows <span class="token operator">===</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token keyword">return</span> s
+  <span class="token keyword">let</span> resArr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    row <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    flag <span class="token operator">=</span> <span class="token boolean">false</span>
+  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> s<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    resArr<span class="token punctuation">[</span>row<span class="token punctuation">]</span> <span class="token operator">=</span> resArr<span class="token punctuation">[</span>row<span class="token punctuation">]</span> <span class="token operator">?</span> resArr<span class="token punctuation">[</span>row<span class="token punctuation">]</span> <span class="token operator">+</span> s<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">:</span> s<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>row <span class="token operator">===</span> numRows <span class="token operator">-</span> <span class="token number">1</span> <span class="token operator">||</span> row <span class="token operator">===</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      flag <span class="token operator">=</span> <span class="token operator">!</span>flag
+    <span class="token punctuation">}</span>
+    flag <span class="token operator">?</span> row<span class="token operator">++</span> <span class="token operator">:</span> row<span class="token operator">--</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> resArr<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token string">''</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="_7-整数反转"><a href="#_7-整数反转" class="header-anchor">#</a> <a href="https://leetcode-cn.com/problems/reverse-integer/" target="_blank" rel="noopener noreferrer">7. 整数反转<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></h3> <p>给出一个 32 位的有符号整数，你需要将这个整数中每位上的数字进行反转。</p> <p><strong>示例 1:</strong></p> <div class="language- extra-class"><pre class="language-text"><code>输入: 123
+输出: 321
+</code></pre></div><p><strong>示例 2:</strong></p> <div class="language- extra-class"><pre class="language-text"><code>输入: -123
+输出: -321
+</code></pre></div><p><strong>示例 3:</strong></p> <div class="language- extra-class"><pre class="language-text"><code>输入: 120
+输出: 21
+</code></pre></div><blockquote><p>注意:
+假设我们的环境只能存储得下 32 位的有符号整数，则其数值范围为  [−231,  231 − 1]。请根据这个假设，如果反转后整数溢出那么就返回 0。</p></blockquote> <p><strong>解</strong></p> <blockquote><p>数字转字符串 -&gt; 字符串转数组 -&gt; 数组反转 -&gt; 正负判断 -&gt; 溢出判断</p></blockquote> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">/**
+ * @param {number} x
+ * @return {number}
+ */</span>
+<span class="token keyword">var</span> <span class="token function-variable function">reverse</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">x</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> <span class="token punctuation">[</span>flag<span class="token punctuation">,</span> str<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span>x <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">,</span> x <span class="token operator">&gt;</span> <span class="token number">0</span> <span class="token operator">?</span> x <span class="token operator">:</span> <span class="token operator">-</span>x<span class="token punctuation">]</span>
+  res <span class="token operator">=</span> str
+    <span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">''</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">reverse</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token string">''</span><span class="token punctuation">)</span>
+  res <span class="token operator">=</span> flag <span class="token operator">?</span> res <span class="token operator">:</span> <span class="token operator">-</span>res
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>res <span class="token operator">&lt;=</span> <span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">2</span><span class="token punctuation">)</span> <span class="token operator">**</span> <span class="token number">31</span> <span class="token operator">||</span> res <span class="token operator">&gt;=</span> <span class="token number">2</span> <span class="token operator">**</span> <span class="token number">31</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span> res <span class="token operator">=</span> <span class="token number">0</span>
+  <span class="token keyword">return</span> res
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="_8-字符串转换整数-atoi"><a href="#_8-字符串转换整数-atoi" class="header-anchor">#</a> <a href="https://leetcode-cn.com/problems/string-to-integer-atoi/" target="_blank" rel="noopener noreferrer">8. 字符串转换整数 (atoi)<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></h3> <p>请你来实现一个 atoi 函数，使其能将字符串转换成整数。</p> <p>首先，该函数会根据需要丢弃无用的开头空格字符，直到寻找到第一个非空格的字符为止。</p> <p>当我们寻找到的第一个非空字符为正或者负号时，则将该符号与之后面尽可能多的连续数字组合起来，作为该整数的正负号；假如第一个非空字符是数字，则直接将其与之后连续的数字字符组合起来，形成整数。</p> <p>该字符串除了有效的整数部分之后也可能会存在多余的字符，这些字符可以被忽略，它们对于函数不应该造成影响。</p> <p>注意：假如该字符串中的第一个非空格字符不是一个有效整数字符、字符串为空或字符串仅包含空白字符时，则你的函数不需要进行转换。</p> <p><strong>在任何情况下，若函数不能进行有效的转换时，请返回 0。</strong></p> <blockquote><p>说明：</p> <p>假设我们的环境只能存储 32 位大小的有符号整数，那么其数值范围为 [−231, 231 − 1]。</p> <p>如果数值超过这个范围，请返回 INT_MAX (231 − 1) 或 INT_MIN (−231) 。</p></blockquote> <p><strong>示例 1:</strong></p> <div class="language- extra-class"><pre class="language-text"><code>输入: &quot;42&quot;
+输出: 42
+</code></pre></div><p><strong>示例 2:</strong></p> <div class="language- extra-class"><pre class="language-text"><code>输入: &quot;   -42&quot;
+输出: -42
+解释: 第一个非空白字符为 '-', 它是一个负号。
+     我们尽可能将负号与后面所有连续出现的数字组合起来，最后得到 -42 。
+</code></pre></div><p><strong>示例 3:</strong></p> <div class="language- extra-class"><pre class="language-text"><code>输入: &quot;4193 with words&quot;
+输出: 4193
+解释: 转换截止于数字 '3' ，因为它的下一个字符不为数字。
+</code></pre></div><p><strong>示例 4:</strong></p> <div class="language- extra-class"><pre class="language-text"><code>输入: &quot;words and 987&quot;
+输出: 0
+解释: 第一个非空字符是 'w', 但它不是数字或正、负号。
+     因此无法执行有效的转换。
+</code></pre></div><p><strong>解</strong></p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">/**
+ * @param {string} str
+ * @return {number}
+ */</span>
+<span class="token keyword">var</span> <span class="token function-variable function">myAtoi</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">str</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  str <span class="token operator">=</span> str<span class="token punctuation">.</span><span class="token function">trim</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token keyword">let</span> <span class="token punctuation">[</span>res<span class="token punctuation">,</span> min<span class="token punctuation">,</span> max<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span>str<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">2</span><span class="token punctuation">)</span> <span class="token operator">**</span> <span class="token number">31</span><span class="token punctuation">,</span> <span class="token number">2</span> <span class="token operator">**</span> <span class="token number">31</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span>
+  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> str<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>str<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token string">' '</span> <span class="token operator">||</span> <span class="token function">isNaN</span><span class="token punctuation">(</span>str<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">break</span>
+    <span class="token punctuation">}</span>
+    res <span class="token operator">+=</span> str<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+  res <span class="token operator">=</span> <span class="token function">isNaN</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span> <span class="token operator">?</span> <span class="token number">0</span> <span class="token operator">:</span> res
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>res <span class="token operator">&lt;</span> min<span class="token punctuation">)</span> res <span class="token operator">=</span> min
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>res <span class="token operator">&gt;</span> max<span class="token punctuation">)</span> res <span class="token operator">=</span> max
+  <span class="token keyword">return</span> res
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="_9-回文数"><a href="#_9-回文数" class="header-anchor">#</a> <a href="https://leetcode-cn.com/problems/palindrome-number/" target="_blank" rel="noopener noreferrer">9. 回文数<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></h3> <p>判断一个整数是否是回文数。回文数是指正序（从左向右）和倒序（从右向左）读都是一样的整数。</p> <p><strong>示例 1:</strong></p> <div class="language- extra-class"><pre class="language-text"><code>输入: 121
+输出: true
+</code></pre></div><p><strong>示例 2:</strong></p> <div class="language- extra-class"><pre class="language-text"><code>输入: -121
+输出: false
+解释: 从左向右读, 为 -121 。 从右向左读, 为 121- 。因此它不是一个回文数。
+</code></pre></div><p><strong>示例 3:</strong></p> <div class="language- extra-class"><pre class="language-text"><code>输入: 10
+输出: false
+解释: 从右向左读, 为 01 。因此它不是一个回文数。
+</code></pre></div><blockquote><p><strong>进阶:</strong></p> <p>你能不将整数转为字符串来解决这个问题吗？</p></blockquote> <p><strong>解</strong></p> <blockquote><p>翻转数组</p></blockquote> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @param {number} x
+ * @return {boolean}
+ */</span>
+<span class="token keyword">var</span> <span class="token function-variable function">isPalindrome</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">x</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    x
+      <span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+      <span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">''</span><span class="token punctuation">)</span>
+      <span class="token punctuation">.</span><span class="token function">reverse</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+      <span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token string">''</span><span class="token punctuation">)</span> <span class="token operator">==</span> x<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="_10-正则表达式匹配"><a href="#_10-正则表达式匹配" class="header-anchor">#</a> <s><a href="https://leetcode-cn.com/problems/regular-expression-matching/" target="_blank" rel="noopener noreferrer">10. 正则表达式匹配<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></s></h3> <p>给你一个字符串 <code>s</code> 和一个字符规律 <code>p</code>，请你来实现一个支持 <code>'.'</code> 和 <code>'*'</code> 的正则表达式匹配。</p> <div class="language- extra-class"><pre class="language-text"><code>'.' 匹配任意单个字符
+'*' 匹配零个或多个前面的那一个元素
+</code></pre></div><p>所谓匹配，是要涵盖 <strong>整个</strong> 字符串 <code>s</code>的，而不是部分字符串。</p> <p><strong>说明:</strong></p> <ul><li><code>s</code> 可能为空，且只包含从 <code>a-z</code> 的小写字母。</li> <li><code>p</code> 可能为空，且只包含从 <code>a-z</code> 的小写字母，以及字符 <code>.</code> 和 <code>*</code>。</li></ul> <p><strong>示例 1:</strong></p> <div class="language- extra-class"><pre class="language-text"><code>输入:
+s = &quot;aa&quot;
+p = &quot;a&quot;
+输出: false
+解释: &quot;a&quot; 无法匹配 &quot;aa&quot; 整个字符串。
+</code></pre></div><p><strong>示例 2:</strong></p> <div class="language- extra-class"><pre class="language-text"><code>输入:
+s = &quot;aa&quot;
+p = &quot;a*&quot;
+输出: true
+解释: 因为 '*' 代表可以匹配零个或多个前面的那一个元素, 在这里前面的元素就是 'a'。因此，字符串 &quot;aa&quot; 可被视为 'a' 重复了一次。
+</code></pre></div><p><strong>示例 3:</strong></p> <div class="language- extra-class"><pre class="language-text"><code>输入:
+s = &quot;ab&quot;
+p = &quot;.*&quot;
+输出: true
+解释: &quot;.*&quot; 表示可匹配零个或多个（'*'）任意字符（'.'）。
+</code></pre></div><p><strong>示例 4:</strong></p> <div class="language- extra-class"><pre class="language-text"><code>输入:
+s = &quot;aab&quot;
+p = &quot;c*a*b&quot;
+输出: true
+解释: 因为 '*' 表示零个或多个，这里 'c' 为 0 个, 'a' 被重复一次。因此可以匹配字符串 &quot;aab&quot;。
+</code></pre></div><p><strong>示例 5:</strong></p> <div class="language- extra-class"><pre class="language-text"><code>输入:
+s = &quot;mississippi&quot;
+p = &quot;mis*is*p*.&quot;
+输出: false
+</code></pre></div><p><strong>解</strong></p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @param {string} s
+ * @param {string} p
+ * @return {boolean}
+ */</span>
+<span class="token keyword">var</span> <span class="token function-variable function">isMatch</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">s<span class="token punctuation">,</span> p</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+</code></pre></div><h3 id="_11-盛最多水的容器"><a href="#_11-盛最多水的容器" class="header-anchor">#</a> <a href="https://leetcode-cn.com/problems/container-with-most-water/" target="_blank" rel="noopener noreferrer">11. 盛最多水的容器<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></h3> <p>给定 n 个非负整数 a1，a2，...，an，每个数代表坐标中的一个点 (i, ai) 。在坐标内画 n 条垂直线，垂直线 i 的两个端点分别为 (i, ai) 和 (i, 0)。找出其中的两条线，使得它们与 x 轴共同构成的容器可以容纳最多的水。</p> <blockquote><p><strong>说明</strong></p> <p>你不能倾斜容器，且 <em>n</em> 的值至少为 2。</p></blockquote> <p><img src="/assets/img/question_11.9daebb6e.jpg" alt="question_11"></p> <blockquote><p>图中垂直线代表输入数组 [1,8,6,2,5,4,8,3,7]。在此情况下，容器能够容纳水（表示为蓝色部分）的最大值为 49。</p></blockquote> <p><strong>示例:</strong></p> <div class="language- extra-class"><pre class="language-text"><code>输入: [1,8,6,2,5,4,8,3,7]
+输出: 49
+</code></pre></div><p><strong>解</strong></p> <blockquote><p>双指针</p></blockquote> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @param {number[]} height
+ * @return {number}
+ */</span>
+<span class="token keyword">var</span> <span class="token function-variable function">maxArea</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">height</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> <span class="token punctuation">[</span>left<span class="token punctuation">,</span> right<span class="token punctuation">,</span> max<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span> height<span class="token punctuation">.</span>length <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">]</span>
+
+  <span class="token keyword">do</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> <span class="token punctuation">[</span>width<span class="token punctuation">,</span> minHeight<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span>right <span class="token operator">-</span> left<span class="token punctuation">]</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>height<span class="token punctuation">[</span>left<span class="token punctuation">]</span> <span class="token operator">&lt;</span> height<span class="token punctuation">[</span>right<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      minHeight <span class="token operator">=</span> height<span class="token punctuation">[</span>left<span class="token punctuation">]</span>
+      left<span class="token operator">++</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+      minHeight <span class="token operator">=</span> height<span class="token punctuation">[</span>right<span class="token punctuation">]</span>
+      right<span class="token operator">--</span>
+    <span class="token punctuation">}</span>
+    max <span class="token operator">=</span> minHeight <span class="token operator">*</span> width <span class="token operator">&gt;</span> max <span class="token operator">?</span> minHeight <span class="token operator">*</span> width <span class="token operator">:</span> max
+  <span class="token punctuation">}</span> <span class="token keyword">while</span> <span class="token punctuation">(</span>left <span class="token operator">!==</span> right<span class="token punctuation">)</span>
+  <span class="token keyword">return</span> max
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="_12-整数转罗马数字"><a href="#_12-整数转罗马数字" class="header-anchor">#</a> <s><a href="https://leetcode-cn.com/problems/integer-to-roman/" target="_blank" rel="noopener noreferrer">12. 整数转罗马数字<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></s></h3> <p>罗马数字包含以下七种字符： I， V， X， L，C，D 和 M。</p> <blockquote><p>字符 数值
+I 1
+V 5
+X 10
+L 50
+C 100
+D 500
+M 1000</p></blockquote> <p>例如， 罗马数字 2 写做 II ，即为两个并列的 1。12 写做 XII ，即为 X + II 。 27 写做 XXVII, 即为 XX + V + II 。</p> <p>通常情况下，罗马数字中小的数字在大的数字的右边。但也存在特例，例如 4 不写做 IIII，而是 IV。数字 1 在数字 5 的左边，所表示的数等于大数 5 减小数 1 得到的数值 4 。同样地，数字 9 表示为 IX。这个特殊的规则只适用于以下六种情况：</p> <ul><li><p>I 可以放在 V (5) 和 X (10) 的左边，来表示 4 和 9。</p></li> <li><p>X 可以放在 L (50) 和 C (100) 的左边，来表示 40 和 90。</p></li> <li><p>C 可以放在 D (500) 和 M (1000) 的左边，来表示 400 和 900。</p></li></ul> <p>给定一个整数，将其转为罗马数字。输入确保在 1 到 3999 的范围内。</p> <p><strong>示例 1:</strong></p> <div class="language- extra-class"><pre class="language-text"><code>输入: 3
+输出: &quot;III&quot;
+</code></pre></div><p><strong>示例 2:</strong></p> <div class="language- extra-class"><pre class="language-text"><code>输入: 4
+输出: &quot;IV&quot;
+</code></pre></div><p><strong>示例 3:</strong></p> <div class="language- extra-class"><pre class="language-text"><code>输入: 9
+输出: &quot;IX&quot;
+</code></pre></div><p><strong>示例 4:</strong></p> <div class="language- extra-class"><pre class="language-text"><code>输入: 58
+输出: &quot;LVIII&quot;
+解释: L = 50, V = 5, III = 3.
+</code></pre></div><p><strong>示例 5:</strong></p> <div class="language- extra-class"><pre class="language-text"><code>输入: 1994
+输出: &quot;MCMXCIV&quot;
+解释: M = 1000, CM = 900, XC = 90, IV = 4.
+</code></pre></div><p><strong>解</strong></p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @param {number} num
+ * @return {string}
+ */</span>
+<span class="token keyword">var</span> <span class="token function-variable function">intToRoman</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">num</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+</code></pre></div><h3 id="_13-罗马数字转整数"><a href="#_13-罗马数字转整数" class="header-anchor">#</a> <s><a href="https://leetcode-cn.com/problems/roman-to-integer/" target="_blank" rel="noopener noreferrer">13. 罗马数字转整数<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></s></h3> <p>罗马数字包含以下七种字符: <code>I</code>， <code>V</code>， <code>X</code>， <code>L</code>，<code>C</code>，<code>D</code> 和 <code>M</code>。</p> <blockquote><p>字符 数值
+I 1
+V 5
+X 10
+L 50
+C 100
+D 500
+M 1000</p></blockquote> <p>例如， 罗马数字 2 写做 II ，即为两个并列的 1。12 写做 XII ，即为 X + II 。 27 写做 XXVII, 即为 XX + V + II 。</p> <p>通常情况下，罗马数字中小的数字在大的数字的右边。但也存在特例，例如 4 不写做 IIII，而是 IV。数字 1 在数字 5 的左边，所表示的数等于大数 5 减小数 1 得到的数值 4 。同样地，数字 9 表示为 IX。这个特殊的规则只适用于以下六种情况：</p> <p>I 可以放在 V (5) 和 X (10) 的左边，来表示 4 和 9。
+X 可以放在 L (50) 和 C (100) 的左边，来表示 40 和 90。
+C 可以放在 D (500) 和 M (1000) 的左边，来表示 400 和 900。
+给定一个罗马数字，将其转换成整数。输入确保在 1 到 3999 的范围内。</p> <p><strong>示例 1:</strong></p> <div class="language- extra-class"><pre class="language-text"><code>输入: &quot;III&quot;
+输出: 3
+</code></pre></div><p><strong>示例 2:</strong></p> <div class="language- extra-class"><pre class="language-text"><code>输入: &quot;IV&quot;
+输出: 4
+</code></pre></div><p><strong>示例 3:</strong></p> <div class="language- extra-class"><pre class="language-text"><code>输入: &quot;IX&quot;
+输出: 9
+</code></pre></div><p><strong>示例 4:</strong></p> <div class="language- extra-class"><pre class="language-text"><code>输入: &quot;LVIII&quot;
+输出: 58
+解释: L = 50, V= 5, III = 3.
+</code></pre></div><p><strong>示例 5:</strong></p> <div class="language- extra-class"><pre class="language-text"><code>输入: &quot;MCMXCIV&quot;
+输出: 1994
+解释: M = 1000, CM = 900, XC = 90, IV = 4.
+</code></pre></div><p><strong>解</strong></p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @param {string} s
+ * @return {number}
+ */</span>
+<span class="token keyword">var</span> <span class="token function-variable function">romanToInt</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">s</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+</code></pre></div><h3 id="_14-最长公共前缀"><a href="#_14-最长公共前缀" class="header-anchor">#</a> <a href="https://leetcode-cn.com/problems/longest-common-prefix/" target="_blank" rel="noopener noreferrer">14. 最长公共前缀<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></h3> <p>编写一个函数来查找字符串数组中的最长公共前缀。</p> <p>如果不存在公共前缀，返回空字符串 <code>&quot;&quot;</code>。</p> <p><strong>示例 1:</strong></p> <div class="language- extra-class"><pre class="language-text"><code>输入: [&quot;flower&quot;,&quot;flow&quot;,&quot;flight&quot;]
+输出: &quot;fl&quot;
+</code></pre></div><p><strong>示例 2:</strong></p> <div class="language- extra-class"><pre class="language-text"><code>输入: [&quot;dog&quot;,&quot;racecar&quot;,&quot;car&quot;]
+输出: &quot;&quot;
+解释: 输入不存在公共前缀。
+</code></pre></div><blockquote><p>说明:</p> <p>所有输入只包含小写字母 <code>a-z</code> 。</p></blockquote> <p><strong>解</strong></p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @param {string[]} strs
+ * @return {string}
+ */</span>
+<span class="token keyword">var</span> <span class="token function-variable function">longestCommonPrefix</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">strs</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>strs<span class="token punctuation">.</span>length<span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token string">''</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>strs<span class="token punctuation">.</span>length <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token keyword">return</span> strs<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+  <span class="token keyword">let</span> <span class="token punctuation">[</span>res<span class="token punctuation">,</span> flag<span class="token punctuation">,</span> index<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">''</span><span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">]</span>
+  <span class="token keyword">let</span> firstStr <span class="token operator">=</span> strs<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+  <span class="token keyword">while</span> <span class="token punctuation">(</span>flag<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    flag <span class="token operator">=</span> strs<span class="token punctuation">.</span><span class="token function">every</span><span class="token punctuation">(</span><span class="token parameter">v</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>v<span class="token punctuation">[</span>index<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token boolean">false</span>
+      <span class="token punctuation">}</span>
+      <span class="token keyword">return</span> v<span class="token punctuation">[</span>index<span class="token punctuation">]</span> <span class="token operator">==</span> firstStr<span class="token punctuation">[</span>index<span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>flag<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      res <span class="token operator">+=</span> firstStr<span class="token punctuation">[</span>index<span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+    index<span class="token operator">++</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> res
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="_28-实现-strstr"><a href="#_28-实现-strstr" class="header-anchor">#</a> <a href="https://leetcode-cn.com/problems/implement-strstr/" target="_blank" rel="noopener noreferrer">28. 实现 strStr()<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></h3> <p>给定一个 <code>haystack</code> 字符串和一个 <code>needle</code> 字符串，在 <code>haystack</code> 字符串中找出 <code>needle</code> 字符串出现的第一个位置 (从 0 开始)。如果不存在，则返回 <strong>-1</strong>。</p> <p><strong>示例 1:</strong></p> <div class="language- extra-class"><pre class="language-text"><code>输入: haystack = &quot;hello&quot;, needle = &quot;ll&quot;
+输出: 2
+</code></pre></div><p><strong>示例 2:</strong></p> <div class="language- extra-class"><pre class="language-text"><code>输入: haystack = &quot;aaaaa&quot;, needle = &quot;bba&quot;
+输出: -1
+</code></pre></div><blockquote><p><strong>说明:</strong></p> <p>当 <code>needle</code> 是空字符串时，我们应当返回什么值呢？这是一个在面试中很好的问题。</p> <p>对于本题而言，当 <code>needle</code> 是空字符串时我们应当返回 0 。这与 C 语言的 <code>strstr()</code> 以及 Java 的 <code>indexOf()</code> 定义相符。</p></blockquote> <p><strong>解</strong></p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">/**
+ * @param {string} haystack
+ * @param {string} needle
+ * @return {number}
+ */</span>
+<span class="token keyword">var</span> <span class="token function-variable function">strStr</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">haystack<span class="token punctuation">,</span> needle</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>needle <span class="token operator">===</span> <span class="token string">''</span><span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token number">0</span>
+  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> haystack<span class="token punctuation">.</span>length <span class="token operator">-</span> needle<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> tempStr <span class="token operator">=</span> haystack<span class="token punctuation">.</span><span class="token function">substring</span><span class="token punctuation">(</span>i<span class="token punctuation">,</span> i <span class="token operator">+</span> needle<span class="token punctuation">.</span>length<span class="token punctuation">)</span>
+    <span class="token keyword">let</span> flag <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">every</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span>needle<span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">v<span class="token punctuation">,</span> index</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> v <span class="token operator">===</span> tempStr<span class="token punctuation">[</span>index<span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>flag<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> i
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> <span class="token operator">-</span><span class="token number">1</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.095001a8.js" defer></script><script src="/assets/js/2.92f36ea8.js" defer></script><script src="/assets/js/7.96af0fe2.js" defer></script>
+  </body>
+</html>

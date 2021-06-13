@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>开篇：Vue CLI 3 项目构建基础 | 好好学习，天天向上</title>
+    <meta name="description" content="Just playing around">
+    <meta name="generator" content="VuePress 1.4.0">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.19b82048.css" as="style"><link rel="preload" href="/assets/js/app.095001a8.js" as="script"><link rel="preload" href="/assets/js/2.92f36ea8.js" as="script"><link rel="preload" href="/assets/js/10.713931ff.js" as="script"><link rel="prefetch" href="/assets/js/11.2436a4da.js"><link rel="prefetch" href="/assets/js/12.3401c678.js"><link rel="prefetch" href="/assets/js/13.8ace1a86.js"><link rel="prefetch" href="/assets/js/14.66a59801.js"><link rel="prefetch" href="/assets/js/15.d6a7c5e8.js"><link rel="prefetch" href="/assets/js/16.0f8ee960.js"><link rel="prefetch" href="/assets/js/3.12335b9b.js"><link rel="prefetch" href="/assets/js/4.a7a9206e.js"><link rel="prefetch" href="/assets/js/5.b69531f8.js"><link rel="prefetch" href="/assets/js/6.4ad6e319.js"><link rel="prefetch" href="/assets/js/7.96af0fe2.js"><link rel="prefetch" href="/assets/js/8.31050bf3.js"><link rel="prefetch" href="/assets/js/9.232e6ecf.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.19b82048.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">好好学习，天天向上</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🙋‍♂️HELP" class="dropdown-title"><span class="title">🙋‍♂️HELP</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/help/面试宝典.html" class="nav-link">
+  面试宝典
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🔥新世界" class="dropdown-title"><span class="title">🔥新世界</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/新世界/黑科技.html" class="nav-link">
+  黑科技
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🙈算法修炼" class="dropdown-title"><span class="title">🙈算法修炼</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          算法问题
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/算法修炼/十大经典排序算法/十大经典排序算法.html" class="nav-link">
+  十大经典排序算法
+</a></li><li class="dropdown-subitem"><a href="/算法修炼/Fibonacci/斐波那契数列.html" class="nav-link">
+  斐波那契数列
+</a></li></ul></li><li class="dropdown-item"><h4>
+          LeetCode
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/算法修炼/LeetCode/JavaScript/JavaScript.html" class="nav-link">
+  JavaScript
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/算法修炼/拍大腿/拍大腿的解法（还可以这样玩）.html" class="nav-link">
+  拍大腿
+</a></li></ul></div></div> <a href="https://github.com/tinymark" target="_blank" rel="noopener noreferrer" class="repo-link">
+    🤞GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🙋‍♂️HELP" class="dropdown-title"><span class="title">🙋‍♂️HELP</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/help/面试宝典.html" class="nav-link">
+  面试宝典
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🔥新世界" class="dropdown-title"><span class="title">🔥新世界</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/新世界/黑科技.html" class="nav-link">
+  黑科技
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🙈算法修炼" class="dropdown-title"><span class="title">🙈算法修炼</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          算法问题
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/算法修炼/十大经典排序算法/十大经典排序算法.html" class="nav-link">
+  十大经典排序算法
+</a></li><li class="dropdown-subitem"><a href="/算法修炼/Fibonacci/斐波那契数列.html" class="nav-link">
+  斐波那契数列
+</a></li></ul></li><li class="dropdown-item"><h4>
+          LeetCode
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/算法修炼/LeetCode/JavaScript/JavaScript.html" class="nav-link">
+  JavaScript
+</a></li></ul></li><li class="dropdown-item"><!----> <a href="/算法修炼/拍大腿/拍大腿的解法（还可以这样玩）.html" class="nav-link">
+  拍大腿
+</a></li></ul></div></div> <a href="https://github.com/tinymark" target="_blank" rel="noopener noreferrer" class="repo-link">
+    🤞GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>开篇：Vue CLI 3 项目构建基础</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/Vue%20%E9%A1%B9%E7%9B%AE%E6%9E%84%E5%BB%BA%E4%B8%8E%E5%BC%80%E5%8F%91%E5%85%A5%E9%97%A8/%E5%BC%80%E7%AF%87%EF%BC%9AVue%20CLI%203%20%E9%A1%B9%E7%9B%AE%E6%9E%84%E5%BB%BA%E5%9F%BA%E7%A1%80.html#依赖工具" class="sidebar-link">依赖工具</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/Vue%20%E9%A1%B9%E7%9B%AE%E6%9E%84%E5%BB%BA%E4%B8%8E%E5%BC%80%E5%8F%91%E5%85%A5%E9%97%A8/%E5%BC%80%E7%AF%87%EF%BC%9AVue%20CLI%203%20%E9%A1%B9%E7%9B%AE%E6%9E%84%E5%BB%BA%E5%9F%BA%E7%A1%80.html#脚手架" class="sidebar-link">脚手架</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Vue%20%E9%A1%B9%E7%9B%AE%E6%9E%84%E5%BB%BA%E4%B8%8E%E5%BC%80%E5%8F%91%E5%85%A5%E9%97%A8/%E5%BC%80%E7%AF%87%EF%BC%9AVue%20CLI%203%20%E9%A1%B9%E7%9B%AE%E6%9E%84%E5%BB%BA%E5%9F%BA%E7%A1%80.html#_1-什么是脚手架" class="sidebar-link">1\. 什么是脚手架</a></li><li class="sidebar-sub-header"><a href="/Vue%20%E9%A1%B9%E7%9B%AE%E6%9E%84%E5%BB%BA%E4%B8%8E%E5%BC%80%E5%8F%91%E5%85%A5%E9%97%A8/%E5%BC%80%E7%AF%87%EF%BC%9AVue%20CLI%203%20%E9%A1%B9%E7%9B%AE%E6%9E%84%E5%BB%BA%E5%9F%BA%E7%A1%80.html#_2-vue-cli" class="sidebar-link">2\. vue-cli</a></li><li class="sidebar-sub-header"><a href="/Vue%20%E9%A1%B9%E7%9B%AE%E6%9E%84%E5%BB%BA%E4%B8%8E%E5%BC%80%E5%8F%91%E5%85%A5%E9%97%A8/%E5%BC%80%E7%AF%87%EF%BC%9AVue%20CLI%203%20%E9%A1%B9%E7%9B%AE%E6%9E%84%E5%BB%BA%E5%9F%BA%E7%A1%80.html#_3-可视化界面" class="sidebar-link">3\. 可视化界面</a></li></ul></li><li><a href="/Vue%20%E9%A1%B9%E7%9B%AE%E6%9E%84%E5%BB%BA%E4%B8%8E%E5%BC%80%E5%8F%91%E5%85%A5%E9%97%A8/%E5%BC%80%E7%AF%87%EF%BC%9AVue%20CLI%203%20%E9%A1%B9%E7%9B%AE%E6%9E%84%E5%BB%BA%E5%9F%BA%E7%A1%80.html#你还需要了解什么" class="sidebar-link">你还需要了解什么</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/Vue%20%E9%A1%B9%E7%9B%AE%E6%9E%84%E5%BB%BA%E4%B8%8E%E5%BC%80%E5%8F%91%E5%85%A5%E9%97%A8/%E5%BC%80%E7%AF%87%EF%BC%9AVue%20CLI%203%20%E9%A1%B9%E7%9B%AE%E6%9E%84%E5%BB%BA%E5%9F%BA%E7%A1%80.html#结语" class="sidebar-link">结语</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="开篇：vue-cli-3-项目构建基础"><a href="#开篇：vue-cli-3-项目构建基础" class="header-anchor">#</a> 开篇：Vue CLI 3 项目构建基础</h1> <p>大家好，当你点进这个标题，开始阅读本章的时候，说明你对 <code>Vue.js</code> 是充满好奇心和求知欲的。我之前写过一篇文章，这样评价 Vue.js，称它是“简单却不失优雅，小巧而不乏大匠”的作品，正如其官网介绍的“易用，灵活和高效”那样。其实框架是 Vue.js 的本质，而真正了解它的人则会把它当成一件作品来欣赏。</p> <p>Vue.js 作为一门轻量级、易上手的前端框架，从入门难度和学习曲线上相对其他框架来说算是占据优势的，越来越多的人开始投入 Vue.js 的怀抱，走进 Vue.js 的世界。那么接下来屏幕前的你不妨一起来和我从零开始构建一个 Vue 项目，体会一下 Vue.js 的精彩绝伦。</p> <h2 id="依赖工具"><a href="#依赖工具" class="header-anchor">#</a> 依赖工具</h2> <p>在构建一个 Vue 项目前，我们先要确保你本地安装了 <code>Node</code> 环境以及包管理工具 <code>npm</code>，打开终端运行：</p> <div class="language- extra-class"><pre class="language-text"><code># 查看 node 版本
+node -v
+
+# 查看 npm 版本
+npm -v
+
+</code></pre></div><p>如果成功打印出版本号，说明你本地具备了 node 的运行环境，我们可以使用 npm 来安装管理项目的依赖，而如果没有或报错，则你需要去 <a href="https://nodejs.org/en/" target="_blank" rel="noopener noreferrer">node 官网<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>进行 node 的下载及安装，如图：</p> <p><img src="https://user-gold-cdn.xitu.io/2018/10/31/166c5eb2c6f04593?w=575&amp;h=197&amp;f=png&amp;s=29269" alt=""></p> <p>左边的版本是推荐安装的稳定版本，也就是目前已经被正式列入标准的版本，而右边的版本是当前最新的版本，该版本包含了一些新的特性，还未被完全列入标准，可能以后会有所变动。这里建议大家安装最新的 node 稳定版进行开发。</p> <h2 id="脚手架"><a href="#脚手架" class="header-anchor">#</a> 脚手架</h2> <p>当我们安装完 node 后便可以开始进行后续的构建工作了，那么这里我主要给大家介绍下最便捷的脚手架构建。</p> <h3 id="_1-什么是脚手架"><a href="#_1-什么是脚手架" class="header-anchor">#</a> 1. 什么是脚手架</h3> <p>很多人可能经常会听到“脚手架”三个字，无论是前端还是后台，其实它在生活中的含义是为了保证各施工过程顺利进行而搭设的工作平台。因此作为一个工作平台，前端的脚手架可以理解为能够帮助我们快速构建前端项目的一个工具或平台。</p> <h3 id="_2-vue-cli"><a href="#_2-vue-cli" class="header-anchor">#</a> 2. vue-cli</h3> <p>其实说到脚手架，目前很多主流的前端框架都提供了各自官方的脚手架工具，以帮助开发者快速构建起自己的项目，比如 <code>Vue</code>、<code>React</code> 等，这里我们就来介绍下 Vue 的脚手架工具 <code>vue-cli</code>。</p> <p>vue-cli 经历了几个版本的迭代，目前最新的版本是 3.x，也是本小册构建项目所使用的版本，我们一起来看下其人性化的构建流程：</p> <h4 id="a-安装"><a href="#a-安装" class="header-anchor">#</a> a. 安装</h4> <p>我们可以在终端通过以下命令全局安装 vue-cli：</p> <div class="language- extra-class"><pre class="language-text"><code># 安装 Vue CLI 3.x
+npm i -g @vue/cli
+
+</code></pre></div><p>如果你习惯使用 <code>yarn</code>，你也可以：</p> <div class="language- extra-class"><pre class="language-text"><code># 没有全局安装yarn需执行此命令
+npm i -g yarn
+yarn global add @vue/cli
+
+</code></pre></div><p>注意因为是全局安装，所以 vue-cli 是全局的包，它和我们所处的项目没有关系。同时我们这里介绍的 CLI 版本是最新的 3.x，它和 2.x 版本存在着很大的区别，具体的讲解会在后续章节中进行介绍。</p> <h4 id="b-构建"><a href="#b-构建" class="header-anchor">#</a> b. 构建</h4> <p>安装完 vue-cli 后，我们在你想要创建的项目目录地址下执行构建命令：</p> <div class="language- extra-class"><pre class="language-text"><code># my-project 是你的项目名称
+vue create my-project
+
+</code></pre></div><p>执行完上述命令后，会出现一系列的选择项，我们可以根据自己的需要进行选择，流程图如下：</p> <p><img src="https://user-gold-cdn.xitu.io/2018/6/18/16412343fab2e351?w=980&amp;h=634&amp;f=png&amp;s=57073" alt=""></p> <p>如果你只想构建一个基础的 Vue 项目，那么使用 <code>Babel</code>、<code>Router</code>、<code>Vuex</code>、<code>CSS Pre-processors</code> 就足够了，最后选择你喜欢的包管理工具 npm or yarn。</p> <h4 id="c-启动"><a href="#c-启动" class="header-anchor">#</a> c. 启动</h4> <p>等待构建完成后你便可以运行命令来启动你的 Vue 项目：</p> <div class="language- extra-class"><pre class="language-text"><code># 打开项目目录
+cd vue-project
+
+# 启动项目
+yarn serve
+
+# or
+npm run serve
+
+</code></pre></div><p>需要注意的是如果启动的时候出现报错或者包丢失等情况，最好将 node 或者 yarn （如果使用）的版本更新到最新重新构建。</p> <p>成功后打开浏览器地址：<a href="http://localhost:8080/" target="_blank" rel="noopener noreferrer">http://localhost:8080/<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> 可以看到如下界面：</p> <p><img src="https://user-gold-cdn.xitu.io/2018/6/18/164125dcfb6fa7d5" alt=""></p> <h4 id="d-目录结构"><a href="#d-目录结构" class="header-anchor">#</a> d. 目录结构</h4> <p>最后脚手架生成的目录结构如下：</p> <div class="language- extra-class"><pre class="language-text"><code>├── node_modules     # 项目依赖包目录
+├── public
+│   ├── favicon.ico  # ico图标
+│   └── index.html   # 首页模板
+├── src 
+│   ├── assets       # 样式图片目录
+│   ├── components   # 组件目录
+│   ├── views        # 页面目录
+│   ├── App.vue      # 父组件
+│   ├── main.js      # 入口文件
+│   ├── router.js    # 路由配置文件
+│   └── store.js     # vuex状态管理文件
+├── .gitignore       # git忽略文件
+├── .postcssrc.js    # postcss配置文件
+├── babel.config.js  # babel配置文件
+├── package.json     # 包管理文件
+└── yarn.lock        # yarn依赖信息文件
+
+</code></pre></div><p>根据你安装时选择的依赖不同，最后生成的目录结构也会有所差异。</p> <h3 id="_3-可视化界面"><a href="#_3-可视化界面" class="header-anchor">#</a> 3. 可视化界面</h3> <p>当然，除了使用上述命令行构建外，<code>vue-cli 3.x</code> 还提供了可视化的操作界面，在项目目录下我们运行如下命令开启图形化界面：</p> <div class="language- extra-class"><pre class="language-text"><code>vue ui
+
+</code></pre></div><p>之后浏览器会自动打开本地 <code>8000</code> 端口，页面如下：</p> <p><img src="https://user-gold-cdn.xitu.io/2018/6/26/1643ca037f818a81?w=805&amp;h=396&amp;f=png&amp;s=18543" alt=""></p> <p>如果你还没有任何项目，那么可以点击创建或者直接导入现有的项目。创建项目和我们使用命令行的步骤基本相同，完全可视化操作，一定程度上降低了构建和使用的难度。项目创建或导入成功后你便可以进入项目进行可视化管理了。</p> <p><img src="https://user-gold-cdn.xitu.io/2018/6/26/1643ca8799bb4491?w=819&amp;h=397&amp;f=png&amp;s=71058" alt=""></p> <p>在整个管理界面中，我们可以为自己的项目安装 CLI 提供的插件，比如安装 <code>@vue/cli-plugin-babel</code> 插件，同时我们也可以配置相应插件的配置项，进行代码的编译、热更新、检查等。详细的操作大家可以自己进行手动尝试，相信你会发现意想不到的惊喜。</p> <h2 id="你还需要了解什么"><a href="#你还需要了解什么" class="header-anchor">#</a> 你还需要了解什么</h2> <p>上方我们用 vue-cli 成功生成了一个最基础的 Vue 项目，麻雀虽小，五脏俱全，但是想要让麻雀飞起来，我们还要不断的给它进行拓展训练，那么我们还需要了解什么呢？</p> <p><img src="https://user-gold-cdn.xitu.io/2018/9/20/165f2c3a9c4f640c?w=665&amp;h=251&amp;f=png&amp;s=21583" alt=""></p> <p>以上这些内容（包含但不限于）将会在本小册的接下来几章进行详细的讲解，你准备好了吗？</p> <h2 id="结语"><a href="#结语" class="header-anchor">#</a> 结语</h2> <p>本文主要讲述了使用 vue-cli 脚手架进行 Vue 项目构建的基本知识，从构建的流程中我们不难发现 Vue 提供给了我们一套非常灵活可配置的工具，其小巧而不乏大匠的魅力不言而喻。希望大家能够从构建开始，逐渐领略 Vue.js 的匠心，激发自己的对 Vue 的兴趣。</p></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.095001a8.js" defer></script><script src="/assets/js/2.92f36ea8.js" defer></script><script src="/assets/js/10.713931ff.js" defer></script>
+  </body>
+</html>
